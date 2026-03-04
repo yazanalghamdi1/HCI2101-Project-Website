@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>صفحة الفريق – Team Page</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 16px;
+      direction: ltr;
+    }
+
+    .team-card {
+      direction: rtl;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 28px 20px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .team-card img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 16px auto;
+      border: 3px solid var(--border-color);
+      background-color: var(--secondary-color);
+    }
+
+    .team-card .name-ar {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-color);
+      margin-bottom: 4px;
+    }
+
+    .team-card .name-en {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+      direction: ltr;
+      display: block;
+    }
+
+    .team-card .badge {
+      display: inline-block;
+      background-color: var(--secondary-color);
+      color: var(--text-secondary);
+      font-size: 11px;
+      padding: 3px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    .badge-leader {
+      background-color: #0071e3 !important;
+      color: #ffffff !important;
+    }
+
+    [data-theme="dark"] .badge-leader {
+      background-color: #2997ff !important;
+    }
+
+    .team-card .email {
+      display: block;
+      font-size: 12px;
+      color: var(--primary-color);
+      margin-top: 8px;
+      word-break: break-all;
+      direction: ltr;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .team-card .student-id {
+      display: block;
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-top: 5px;
+      direction: ltr;
+      text-align: center;
+    }
+
+    .section-title-bilingual {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .section-title-bilingual h2 {
+      margin-bottom: 0;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .section-title-bilingual span {
+      font-size: 16px;
+      color: var(--text-secondary);
+      direction: ltr;
+    }
+
+    @media (max-width: 700px) {
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 420px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- ─── Navigation ─── -->
+  <nav class="fixed-nav">
+    <ul>
+      <li><a href="index-ar-light.html">🌐 AR ☀️</a></li>
+      <li><a href="index-ar-dark.html">🌐 AR 🌙</a></li>
+      <li><a href="index-en-light.html">🌐 EN ☀️</a></li>
+      <li><a href="index-en-dark.html">🌐 EN 🌙</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ─── Hero ─── -->
+    <section class="hero-section">
+      <h1>فريق المشروع</h1>
+      <h2>Project Team &nbsp;·&nbsp; HCI2101 &nbsp;·&nbsp; جامعة أم القرى – Umm Al-Qura University</h2>
+    </section>
+
+    <!-- ─── أعضاء الفريق ─── -->
+    <section>
+      <div class="section-title-bilingual">
+        <h2>أعضاء الفريق</h2>
+        <span>Team Members</span>
+      </div>
+
+      <div class="team-grid">
+
+        <!-- 1 - يزن (قائد الفريق) -->
+        <div class="team-card">
+          <img src="images/member4.jpg" alt="يزن بن محمد الغامدي" />
+          <div class="name-ar">يزن بن محمد الغامدي</div>
+          <span class="name-en">Yazan Mohammed Al-Ghamdi</span>
+          <span class="badge badge-leader">قائد الفريق – Team Leader</span><br/>
+          <a class="email" href="mailto:s446001212@uqu.edu.sa">s446001212@uqu.edu.sa</a>
+          <span class="student-id">446001212</span>
+        </div>
+
+        <!-- 2 - محمد طارق -->
+        <div class="team-card">
+          <img src="images/member1.jpg" alt="محمد طارق عنقاوي" />
+          <div class="name-ar">محمد طارق عنقاوي</div>
+          <span class="name-en">Mohammed Tariq Anqawi</span>
+          <span class="badge">عضو – Member</span><br/>
+          <a class="email" href="mailto:s446000044@uqu.edu.sa">s446000044@uqu.edu.sa</a>
+          <span class="student-id">446000044</span>
+        </div>
+
+        <!-- 3 - فيصل -->
+        <div class="team-card">
+          <img src="images/member2.jpg" alt="فيصل السهلي" />
+          <div class="name-ar">فيصل السهلي</div>
+          <span class="name-en">Faisal Al-Suhli</span>
+          <span class="badge">عضو – Member</span><br/>
+          <a class="email" href="mailto:s446005672@uqu.edu.sa">s446005672@uqu.edu.sa</a>
+          <span class="student-id">446005672</span>
+        </div>
+
+        <!-- 4 - زياد -->
+        <div class="team-card">
+          <img src="images/member3.jpg" alt="زياد صالح رداد الحربي" />
+          <div class="name-ar">زياد صالح رداد الحربي</div>
+          <span class="name-en">Ziyad Saleh Raddad Al-Harbi</span>
+          <span class="badge">عضو – Member</span><br/>
+          <a class="email" href="mailto:s466003995@uqu.edu.sa">s466003995@uqu.edu.sa</a>
+          <span class="student-id">466003995</span>
+        </div>
+
+        <!-- 5 - عبدالرزاق -->
+        <div class="team-card">
+          <img src="images/member5.jpg" alt="عبدالرزاق ياسر آدم" />
+          <div class="name-ar">عبدالرزاق ياسر آدم</div>
+          <span class="name-en">Abdulrazzaq Yasser Adam</span>
+          <span class="badge">عضو – Member</span><br/>
+          <a class="email" href="mailto:s446001616@uqu.edu.sa">s446001616@uqu.edu.sa</a>
+          <span class="student-id">446001616</span>
+        </div>
+
+        <!-- 6 - عبداللطيف -->
+        <div class="team-card">
+          <img src="images/member6.jpg" alt="عبداللطيف عماد الهندي" />
+          <div class="name-ar">عبداللطيف عماد الهندي</div>
+          <span class="name-en">Abdullatif Emad Al-Hindi</span>
+          <span class="badge">عضو – Member</span><br/>
+          <a class="email" href="mailto:s44610418@uqu.edu.sa">s44610418@uqu.edu.sa</a>
+          <span class="student-id">44610418</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
